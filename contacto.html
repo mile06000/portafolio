@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mi-navbar">
+  <div class="container-fluid">
+<a class="navbar-brand" href="Index.html">
+  <img src="img/Logo.jpg" alt="Logo MHNV" width="40" height="40" class="d-inline-block align-text-top">
+  MHNV
+</a>    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Visualizador de datos</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="formulario.html">Formulario visitantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</main>
+    <section id="contacto" class="container my-5">
+  <h2 class="mb-4">Contacto</h2>
+  <form id="formularioContacto">
+    <div class="mb-3">
+      <label for="nombreContacto" class="form-label">Nombre *</label>
+      <input type="text" class="form-control" id="nombreContacto" name="nombreContacto" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="correoContacto" class="form-label">Correo electrónico *</label>
+      <input type="email" class="form-control" id="correoContacto" name="correoContacto" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="asuntoContacto" class="form-label">Asunto</label>
+      <input type="text" class="form-control" id="asuntoContacto" name="asuntoContacto">
+    </div>
+
+    <div class="mb-3">
+      <label for="mensajeContacto" class="form-label">Mensaje *</label>
+      <textarea class="form-control" id="mensajeContacto" name="mensajeContacto" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+     <main>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mi-navbar">
+  <div class="container-fluid">
+<a class="navbar-brand" href="Index.html">
+  <img src="img/Logo.jpg" alt="Logo MHNV" width="40" height="40" class="d-inline-block align-text-top">
+  MHNV
+</a>    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Visualizador de datos</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="formulario.html">Formulario visitantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</main>
+ <div class="container my-5">
+  <h2 class="mb-4 text-center" >Registro de Establecimientos</h2>
+  <form id="registroEstablecimiento">
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="nombreInstitucion" class="form-label">Nombre institución *</label>
+        <input type="text" class="form-control" id="nombreInstitucion" name="nombreInstitucion" required>
+      </div>
+      <div class="col-md-6">
+        <label for="region" class="form-label">Región *</label>
+        <select class="form-select" id="region" name="region" required>
+          <option value="">Seleccione una región</option>
+          <option value="Arica y Parinacota">Arica y Parinacota</option>
+          <option value="Tarapacá">Tarapacá</option>
+          <option value="Antofagasta">Antofagasta</option>
+          <option value="Atacama">Atacama</option>
+          <option value="Coquimbo">Coquimbo</option>
+          <option value="Valparaíso">Valparaíso</option>
+          <option value="Metropolitana">Metropolitana</option>
+          <option value="O'Higgins">O'Higgins</option>
+          <option value="Maule">Maule</option>
+          <option value="Ñuble">Ñuble</option>
+          <option value="Biobío">Biobío</option>
+          <option value="La Araucanía">La Araucanía</option>
+          <option value="Los Ríos">Los Ríos</option>
+          <option value="Los Lagos">Los Lagos</option>
+          <option value="Aysén">Aysén</option>
+          <option value="Magallanes">Magallanes</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="comuna" class="form-label">Comuna *</label>
+        <select class="form-select" id="comuna" name="comuna" required>
+          <option value="">Seleccione una comuna</option>
+          <option value="Valparaíso">Valparaíso</option>
+          <option value="Viña del Mar">Viña del Mar</option>
+          <option value="Santiago">Santiago</option>
+          <option value="La Serena">La Serena</option>
+          <!-- Agrega más comunas aquí -->
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="administracion" class="form-label">Administración *</label>
+        <select class="form-select" id="administracion" name="administracion" required>
+          <option value="">Seleccione una opción</option>
+          <option value="Estatal">Estatal</option>
+          <option value="Municipal">Municipal</option>
+          <option value="Particular">Particular</option>
+          <option value="Particular Subvencionado">Particular Subvencionado</option>
+          <option value="SLEP">SLEP</option>
+          <option value="Educación Superior">Educación Superior</option>
+          <option value="Institución No Educativa">Institución No Educativa</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-3">
+  <div class="col-md-12">
+    <label for="direccionEstablecimiento" class="form-label">Dirección del establecimiento</label>
+    <input type="text" class="form-control" id="direccionEstablecimiento" name="direccionEstablecimiento">
+  </div>
+</div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="numeroEstablecimiento" class="form-label">Número del establecimiento</label>
+        <input type="text" class="form-control" id="numeroEstablecimiento" name="numeroEstablecimiento">
+      </div>
+      <div class="col-md-6">
+        <label for="correoEstablecimiento" class="form-label">Correo del establecimiento</label>
+        <input type="email" class="form-control" id="correoEstablecimiento" name="correoEstablecimiento">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="nombrePersona" class="form-label">Nombre de la persona a cargo</label>
+        <input type="text" class="form-control" id="nombrePersona" name="nombrePersona">
+      </div>
+      <div class="col-md-6">
+        <label for="correoPersona" class="form-label">Correo de la persona a cargo</label>
+        <input type="email" class="form-control" id="correoPersona" name="correoPersona">
+      </div>
+    </div>
+
+    <div class="text-end">
+      <button type="submit" class="btn btn-primary">Registrar Establecimiento</button>
+    </div>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
