@@ -1,6 +1,6 @@
 /* Estilo personalizado para la navbar */
 .mi-navbar {
-  background-color: #ff5100 !important; /* azul oscuro */
+  background-color: #ff5100 !important; 
   padding: 10px 20px;
 }
 
@@ -16,6 +16,6 @@
 }
 
 .mi-navbar .nav-link:hover {
-  color: #ffd700 !important; /* amarillo */
+  color: #ffd700 !important; 
   text-decoration: underline;
 }

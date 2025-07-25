@@ -1,48 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portafolio</title>
 
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+  <!-- Tu CSS personalizado -->
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
-    <main>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mi-navbar">
-  <div class="container-fluid">
-<a class="navbar-brand" href="Index.html">
-  <img src="img/Logo.jpg" alt="Logo MHNV" width="40" height="40" class="d-inline-block align-text-top">
-  MHNV
-</a>    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Visualizador de datos</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="formulario.html">Formulario visitantes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
+<body class="bg-light">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mi-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img src="img/Logo.jpg" alt="Logo MHNV" width="40" height="40" class="d-inline-block align-text-top">
+        MHNV
+      </a>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Visualizador de datos</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario visitantes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card text-center shadow" style="width: 50rem;">
+      <img src="img/museo-de-historia-natural.jpg" class="card-img-top" alt="Imagen descriptiva">
+      <div class="card-body">
+        <h5 class="card-title">Datos de Visitas Institucionales</h5>
+        <p class="card-text">Dentro de esta página encontrarás un visualizador de datos cartográficos y estadísticos sobre las instituciones que han visitado el museo entre los años 2014 y 2024. Además, podrás completar un formulario con los datos de tu institución si ya tienes una visita agendada.
+        </p>
+      </div>
     </div>
   </div>
-</nav>
-</main>
 
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-2QNKXHbUQboi1Oj7V9NUEtqKpZRmOoyeqhLfUUmPNb9x0WjcDB7JafTi68zHY8sD" crossorigin="anonymous"></script>
-
-<script src="js/script.js"></script>
-
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
